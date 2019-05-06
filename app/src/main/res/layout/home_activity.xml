@@ -6,7 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/toolbar" />
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -59,7 +67,7 @@
             android:onClick="menuItemClicked"
             android:text="@string/document_dispatch_to_branch_office" />
     </LinearLayout>
-    <android.support.design.widget.FloatingActionButton
+    <!--<android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,8 +76,8 @@
         app:backgroundTint="@color/colorAccent"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        app:srcCompat="@drawable/ic_notifications_none_24dp"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        app:srcCompat="@drawable/ic_notifications_none_24dp"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForAll"
@@ -96,8 +104,8 @@
         app:backgroundTint="@color/colorFAB1"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        app:srcCompat="@drawable/ic_notifications_none_24dp"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        app:srcCompat="@drawable/ic_notifications_none_24dp"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForFab5"
@@ -126,8 +134,8 @@
         app:backgroundTint="@color/colorFAB2"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        android:src="@drawable/ic_notifications_none_24dp"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        android:src="@drawable/ic_notifications_none_24dp"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForFab4"
@@ -157,8 +165,8 @@
         app:backgroundTint="@color/colorFAB1"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        android:src="@drawable/ic_notifications_none_24dp"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        android:src="@drawable/ic_notifications_none_24dp"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForFab3"
@@ -188,8 +196,8 @@
         app:backgroundTint="@color/colorFAB2"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        android:src="@drawable/ic_approve"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        android:src="@drawable/ic_approve"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForFab2"
@@ -219,8 +227,8 @@
         app:backgroundTint="@color/white"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        android:src="@drawable/duty_and_tax_white"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        android:src="@drawable/duty_and_tax_white"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForFab1"
@@ -249,8 +257,8 @@
         app:backgroundTint="@color/colorFAB1"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        android:src="@drawable/ic_notifications_none_24dp"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        android:src="@drawable/ic_notifications_none_24dp"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForFab6"
@@ -280,8 +288,8 @@
         app:backgroundTint="@color/colorFAB1"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
-        tools:ignore="MissingConstraints" /><!--
-        android:src="@drawable/ic_notifications_none_24dp"-->
+        tools:ignore="MissingConstraints" />&lt;!&ndash;
+        android:src="@drawable/ic_notifications_none_24dp"&ndash;&gt;
 
     <TextView
         android:id="@+id/badgeForFab7"
@@ -331,7 +339,7 @@
         android:textColor="@android:color/white"
         android:textSize="13sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent" />-->
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomNavigationView"

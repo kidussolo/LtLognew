@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <Spinner
+                android:id="@+id/spiContainerNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="start"
+                android:hint="Container Number"
+                android:textAlignment="textStart"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.5sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/buttonColor" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp">
+
+            <EditText
+                android:id="@+id/txtPlateNumber"
+                style="@style/edittextsystle"
+                android:drawablePadding="5dp"
+                android:hint="Plate Number"
+                android:inputType="text"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <EditText
+                android:id="@+id/txtDriverName"
+                style="@style/edittextsystle"
+                android:drawablePadding="5dp"
+                android:hint="Driver Name"
+                android:inputType="text"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <EditText
+                android:id="@+id/txtPhoneNumber"
+                style="@style/edittextsystle"
+                android:drawablePadding="5dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColorHint="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <EditText
+                android:id="@+id/txtFinalDestination"
+                style="@style/edittextsystle"
+                android:drawablePadding="5dp"
+                android:hint="Final Destination"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <EditText
+                android:id="@+id/txtLoadingDate"
+                style="@style/edittextsystle"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Loading Date"
+                android:inputType="date" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <EditText
+                android:id="@+id/txtDepartureDate"
+                style="@style/edittextsystle"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Departure Date"
+                android:inputType="datetime" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <EditText
+                android:id="@+id/txtArrivalDate"
+                style="@style/edittextsystle"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Estimate Arrival Date"
+                android:inputType="datetime" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+
+        android:layout_height="621dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/buttonstyle"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_edit"
+            android:text="Update"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/buttonstyle"
+            android:layout_width="match_parent"
+            android:text="clear"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>

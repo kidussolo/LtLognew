@@ -2,18 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/nav_DTCS"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/title_duty_and_customs" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/nav_CACO"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:title="@string/title_cargo_and_container" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/nav_DOC"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:title="@string/title_document_dispatch" />
+    <item
+        android:id="@+id/nav_ACT"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/account" />
+
+    <item
+        android:id="@+id/nav_BLOP"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/bill_and_operation" />
 
 </menu>
