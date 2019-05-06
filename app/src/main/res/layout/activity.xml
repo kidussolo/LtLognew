@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/borderline2"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnAdvanceRequest"
+            style="@style/buttonstyle"
+            android:drawablePadding="4dp"
+            android:text="@string/advance_request" />
+
+
+        <Button
+            android:id="@+id/btnAdvanceApprove"
+            style="@style/buttonstyle"
+            android:drawablePadding="4dp"
+            android:onClick="menuItemClicked"
+            android:text="@string/advance_approve" />
+
+        <Button
+            android:id="@+id/btnCargo"
+            style="@style/buttonstyle"
+            android:drawablePadding="4dp"
+            android:onClick="menuItemClicked"
+            android:text="@string/cargo" />
+
+        <Button
+            android:id="@+id/btnBillOfLoadingDocReceived"
+            style="@style/buttonstyle"
+            android:drawablePadding="4dp"
+            android:onClick="menuItemClicked"
+            android:text="@string/bill_of_loading_received" />
+
+        <Button
+            android:id="@+id/btnDocDisBranchOffice"
+            style="@style/buttonstyle"
+            android:drawablePadding="4dp"
+            android:onClick="menuItemClicked"
+            android:text="@string/document_dispatch_to_branch_office" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        app:srcCompat="@drawable/ic_notifications_none_24dp"-->
+
+    <TextView
+        android:id="@+id/badgeForAll"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="340dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        app:srcCompat="@drawable/ic_notifications_none_24dp"-->
+
+    <TextView
+        android:id="@+id/badgeForFab5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="340dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="280dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB2"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        android:src="@drawable/ic_notifications_none_24dp"-->
+
+    <TextView
+        android:id="@+id/badgeForFab4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="280dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="210dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        android:src="@drawable/ic_notifications_none_24dp"-->
+
+    <TextView
+        android:id="@+id/badgeForFab3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="210dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB2"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        android:src="@drawable/ic_approve"-->
+
+    <TextView
+        android:id="@+id/badgeForFab2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="visible"
+        app:backgroundTint="@color/white"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        android:src="@drawable/duty_and_tax_white"-->
+
+    <TextView
+        android:id="@+id/badgeForFab1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="400dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        android:src="@drawable/ic_notifications_none_24dp"-->
+
+    <TextView
+        android:id="@+id/badgeForFab6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="400dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="460dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        tools:ignore="MissingConstraints" /><!--
+        android:src="@drawable/ic_notifications_none_24dp"-->
+
+    <TextView
+        android:id="@+id/badgeForFab7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="460dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:pressedTranslationZ="12dp" />
+
+    <TextView
+        android:id="@+id/badgeForFab8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/badge_background_red"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>
